@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beranda</title>
+  <link rel="stylesheet" type="text/css" href="Navbar.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/registration.js"></script>
+
+</head>
+
+<body>
+
+	<div class="title">
+       traineren
+      </div>
+
+
+<br>
+<br>
+<div class="login">
+    <form action="#" method="POST" onSubmit="validasi()">
+      <div>
+        <label>Full Name:</label><br>
+        <input type="text" name="nama" id="nama" /><br><br>
+      </div>
+      <div>
+        <label>Email:</label><br>
+        <input type="email" name="email" id="email" /><br><br>
+      </div>
+      <div>
+        <label>Password:</label><br>
+        <input type="text" name="alamat" id="sandi"></input><br><br>
+      </div>
+      <div>
+        <input type="submit" value="Register" class="tombol"><a href="beranda.html"></a>
+      </div><br>
+    
+      <div class="log">
+        <a href="login.html" style="color: white">Login</a>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+  function validasi() {
+    var nama = document.getElementById("nama").value;
+    var email = document.getElementById("email").value;
+    var sandi = document.getElementById("sandi").value;
+    if (nama != "" && email!="" && sandi !="") {
+      return true;
+    }else{
+      alert('Anda harus mengisi data dengan lengkap !');
+    }
+  }
+
+
+
+</script>
+</html>

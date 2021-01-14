@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beranda</title>
+  <link rel="stylesheet" type="text/css" href="Navbar.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/registration.js"></script>
+</head>
+
+<body background="training.jpg">
+
+	<div class="title">
+       traineren
+      </div>
+
+
+<br>
+<br>
+<div class="login">
+    <form action="#" method="POST" onSubmit="validasi()">
+      <div>
+        <label>Full Name:</label><br>
+        <input type="text" name="nama" id="nama" /><br><br>
+      </div>
+
+      <div>
+        <label>Password:</label><br>
+        <input type="text" name="alamat" id="sandi"></input><br><br>
+      </div>
+      <div>
+       <a href="beranda.html" style="color: white">Login</a>
+      </div><br>
+      
+          </form>
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+  function validasi() {
+    var nama = document.getElementById("nama").value;
+   
+    var sandi = document.getElementById("sandi").value;
+    if (nama != "" && sandi !="") {
+      return true;
+    }else{
+      alert('Anda harus mengisi data dengan lengkap !');
+    }
+  }
+
+</script>
+</html>
